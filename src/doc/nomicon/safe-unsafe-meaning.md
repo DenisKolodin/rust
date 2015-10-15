@@ -41,7 +41,7 @@ Some examples of unsafe functions:
 
 * `slice::get_unchecked` will perform unchecked indexing, allowing memory
   safety to be freely violated.
-* `ptr::offset` is an intrinsic that invokes Undefined Behavior if it is
+* `pointer::offset` is an intrinsic that invokes Undefined Behavior if it is
   not "in bounds" as defined by LLVM.
 * `mem::transmute` reinterprets some value as having the given type,
   bypassing type safety in arbitrary ways. (see [conversions] for details)
